@@ -8,25 +8,32 @@
 </head>
 <header> <h1> Let's Draw Shapes! </h1></header>
 <body>
-    <canvas id="canvas" width="800" height="500" ></canvas>
+    <canvas id="canvas" width="800" height="500"></canvas>
     <br>
+<form>
+    <p>Pick a Shape</p>
+        <input type="radio" id="rectangle" name="shape">
+        <label for="rectangle">Rectangle</label>
+        <input type="radio" id="circle" name="shape">
+        <label for="circle">Circle</label>
+        <input type="radio" id="line" name="shape">
+        <label for="line">Line</label>
     <br>
-    <button id="rectangle-button">Rectangle</button>
-    <button id="circle-button">Circle</button>
-    <button id="line-button">Line</button>
-    <br>
-    <br>
-    <select id="color-picker">
-        <option id="blue">Blue</option>
-        <option id="blue">Red</option>
-        <option id="blue">Green</option>
-        <option id="blue">Yellow</option>
-        <option id="blue">Purple</option>
-    </select>
+    <p>Pick a Color</p>
+        <input type="radio" id="blue" name="color">
+        <label for="blue">Blue</label>
+        <input type="radio" id="red" name="color">
+        <label for="red">Red</label>
+        <input type="radio" id="green" name="color">
+        <label for="green">Green</label>  
+        <input type="radio" id="yellow" name="color">
+        <label for="yellow">Yellow</label>   
+        <input type="radio" id="purple" name="color">
+        <label for="purple">Purple</label>   
     <br>
     <br>
     <button id="erase-canvas">Erase</button>
-
+</form>
     <script src="app.js"></script>
 </body>
 </html>
