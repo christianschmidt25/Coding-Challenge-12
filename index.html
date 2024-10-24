@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drawing Shapes</title>
-    <link rel="stylesheet" type="css" href="style.css"
+    <link rel="stylesheet" type="text/css" href="style.css"
 </head>
 <header> <h1> Let's Draw Shapes! </h1></header>
 <body>
-    <canvas id="canvas" width="800" height="500"></canvas>
+    <canvas id="canvas" width="800" height="500" style="border: 2px solid black"></canvas>
     <br>
 <form>
-    <p>Pick a Shape</p>
+    <p style="font-weight: bold;">Pick a Shape</p>
         <input type="radio" id="rectangle" name="shape" value="rectangle" checked>
         <label for="rectangle">Rectangle</label>
         <input type="radio" id="circle" name="shape" value="circle">
@@ -19,7 +19,8 @@
         <input type="radio" id="line" name="shape" value="line">
         <label for="line">Line</label>
     <br>
-    <p>Pick a Color</p>
+    <br>
+    <p style="font-weight: bold;">Pick a Color</p>
         <input type="color" id="colorPicker" name="color" value="#0000ff">
         <label for="colorPicker"></label> 
     <br>
