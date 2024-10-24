@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drawing Shapes</title>
-    <link href="style.css">
 </head>
 <header> <h1> Let's Draw Shapes! </h1></header>
 <body>
@@ -12,7 +11,7 @@
     <br>
 <form>
     <p>Pick a Shape</p>
-        <input type="radio" id="rectangle" name="shape" value="rectangle">
+        <input type="radio" id="rectangle" name="shape" value="rectangle" checked>
         <label for="rectangle">Rectangle</label>
         <input type="radio" id="circle" name="shape" value="circle">
         <label for="circle">Circle</label>
@@ -20,19 +19,11 @@
         <label for="line">Line</label>
     <br>
     <p>Pick a Color</p>
-        <input type="radio" id="blue" name="color" value="blue">
-        <label for="blue">Blue</label>
-        <input type="radio" id="red" name="color" value="red">
-        <label for="red">Red</label>
-        <input type="radio" id="green" name="color" value="green">
-        <label for="green">Green</label>  
-        <input type="radio" id="yellow" name="color" value="yellow">
-        <label for="yellow">Yellow</label>   
-        <input type="radio" id="purple" name="color" value="purple">
-        <label for="purple">Purple</label>   
+        <input type="color" id="colorPicker" name="color" value="#0000ff">
+        <label for="colorPicker"></label> 
     <br>
     <br>
-    <button id="erase-canvas">Erase</button>
+    <button id="erase-canvas" type="button">Erase</button>
 </form>
     <script src="app.js"></script>
 </body>
